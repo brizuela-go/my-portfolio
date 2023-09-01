@@ -61,6 +61,7 @@ export default function Navbar() {
             const Icon = social.icon;
             return (
               <Link
+                key={social.name}
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,6 +79,7 @@ export default function Navbar() {
           const Icon = social.icon;
           return (
             <Link
+              key={social.name}
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
