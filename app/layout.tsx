@@ -32,21 +32,21 @@ export default function RootLayout({
           content="Personal portfolio of Juan Brizuela"
         />
       </head>
-      {/* <AnimatePresence mode="wait"> */}
-      <body className={`${inter.className}`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {/* <motion.div key={pathName} className="h-full"> */}
-          {/* <Transition /> */}
-          <header>
-            <Navbar />
-          </header>
-          <Sidebar />
-          <ParticlesComponent />
-          {children}
-          {/* </motion.div> */}
-        </ThemeProvider>
-      </body>
-      {/* </AnimatePresence> */}
+      <AnimatePresence mode="wait">
+        <body className={`${inter.className}`}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <motion.div key={pathName} className="h-full">
+              <Transition />
+              <header>
+                <Navbar />
+              </header>
+              <Sidebar />
+              <ParticlesComponent />
+              {children}
+            </motion.div>
+          </ThemeProvider>
+        </body>
+      </AnimatePresence>
     </html>
   );
 }
