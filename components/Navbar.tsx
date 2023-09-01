@@ -61,6 +61,7 @@ export default function Navbar() {
             const Icon = social.icon;
             return (
               <Link
+                aria-label={social.name}
                 key={social.name}
                 href={social.url}
                 target="_blank"
@@ -76,9 +77,10 @@ export default function Navbar() {
       </nav>
       <div className="flex justify-center items-center gap-6 sm:hidden  ">
         {socials.map((social) => {
-          const Icon = social.icon;
+          const Icon: any = social.icon;
           return (
             <Link
+              aria-label={social.name}
               key={social.name}
               href={social.url}
               target="_blank"

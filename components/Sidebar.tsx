@@ -71,7 +71,7 @@ export default function Sidebar() {
             <Link href={item.href} key={item.href}>
               <TooltipProvider>
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger aria-label={item.name}>
                     <item.icon
                       className={`w-6 h-6 ${
                         pathname !== item.href &&
@@ -93,7 +93,7 @@ export default function Sidebar() {
           {menuItems.map((item) => (
             <Link href={item.href} key={item.href}>
               <MenubarMenu>
-                <MenubarTrigger>
+                <MenubarTrigger aria-label={item.name}>
                   <item.icon
                     className={`w-6 h-6 ${
                       pathname !== item.href && "opacity-40"
