@@ -27,10 +27,14 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* description */}
+
         <meta
           name="description"
           content="Personal portfolio of Juan Brizuela"
         />
+
+        {/* link manifest json */}
+        <link rel="manifest" href="/manifest.json" />
 
         <link rel="apple-touch-icon" href="apple-icon-180.png" />
 
