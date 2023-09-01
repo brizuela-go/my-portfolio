@@ -29,8 +29,8 @@ const Transition = () => {
         exit="exit"
         transition={{
           ease: "easeInOut",
-          delay: 0.2,
-          duration: 2,
+          delay: 0.4,
+          duration: 1,
         }}
       >
         <div className="flex justify-center items-center h-screen">
@@ -52,9 +52,9 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{
-          delay: 0.4,
+          delay: 0.6,
           ease: "easeInOut",
-          duration: 1.8,
+          duration: 0.8,
         }}
       >
         {/* <div className="flex justify-center items-center h-screen">
@@ -76,9 +76,9 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{
-          delay: 0.6,
+          delay: 0.8,
           ease: "easeInOut",
-          duration: 1.8,
+          duration: 0.8,
         }}
       >
         {/* <div className="flex justify-center items-center h-screen">
