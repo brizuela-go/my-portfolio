@@ -95,7 +95,7 @@ export default function Sidebar() {
               <MenubarMenu>
                 <MenubarTrigger aria-label={item.name}>
                   <item.icon
-                    className={`w-6 h-6 ${
+                    className={`w-5 h-5 ${
                       pathname !== item.href && "opacity-40"
                     }`}
                   />

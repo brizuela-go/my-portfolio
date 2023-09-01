@@ -47,8 +47,8 @@ const socials = [
 
 export default function Navbar() {
   return (
-    <>
-      <nav className="p-6 max-w-5xl mx-auto flex justify-between items-center sticky  ">
+    <div className="stickit">
+      <nav className="p-6 max-w-5xl mx-auto flex justify-between items-center  ">
         <Link
           href={"/"}
           className="flex items-center gap-x-2 hover:opacity-70 transition duration-200 ease-in-out"
@@ -93,6 +93,6 @@ export default function Navbar() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
