@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const socials = [
   {
@@ -48,14 +49,14 @@ export default function Navbar() {
   return (
     <>
       <nav className="p-6 max-w-5xl mx-auto flex justify-between items-center sticky  ">
-        <div className="flex items-center">
-          <Link
-            href="/"
-            className=" text-2xl font-medium tracking-tight bg-clip-text text-transparent bg-gradient-to-r dark:from-slate-200  dark:to-zinc-300 from-zinc-700 to-zinc-950 hover:opacity-70 transition duration-200 ease-in-out"
-          >
+        <Link
+          href={"/"}
+          className="flex items-center gap-x-2 hover:opacity-70 transition duration-200 ease-in-out"
+        >
+          <div className=" text-2xl font-medium tracking-tight bg-clip-text text-transparent bg-gradient-to-r dark:from-slate-200  dark:to-zinc-300 from-zinc-700 to-zinc-950 ">
             juan <span className="font-bold ">brizuela</span>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="sm:flex justify-center items-center gap-6 hidden ">
           {socials.map((social) => {
             const Icon = social.icon;

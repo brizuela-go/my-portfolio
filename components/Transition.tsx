@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const transitionVariants = {
   initial: {
@@ -28,23 +29,24 @@ const Transition = () => {
         exit="exit"
         transition={{
           ease: "easeInOut",
-          duration: 0.4,
-        }}
-      ></motion.div>
-      <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-gradient-to-r dark:bg-zinc-900 bg-zinc-100 "
-        variants={transitionVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        transition={{
           delay: 0.2,
-          ease: "easeInOut",
-          duration: 0.4,
+          duration: 2,
         }}
-      ></motion.div>
+      >
+        <div className="flex justify-center items-center h-screen">
+          <Image
+            src="/logo.png"
+            width={200}
+            height={200}
+            alt="logo"
+            className="filter
+          invert dark:filter-none
+          "
+          />
+        </div>
+      </motion.div>
       <motion.div
-        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-gradient-to-r dark:bg-zinc-800 bg-zinc-200"
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-gradient-to-r dark:bg-zinc-900 bg-zinc-200 "
         variants={transitionVariants}
         initial="initial"
         animate="animate"
@@ -52,9 +54,45 @@ const Transition = () => {
         transition={{
           delay: 0.4,
           ease: "easeInOut",
-          duration: 0.4,
+          duration: 1.8,
         }}
-      ></motion.div>
+      >
+        {/* <div className="flex justify-center items-center h-screen">
+          <Image
+            src="/logo.png"
+            width={200}
+            height={200}
+            alt="logo"
+            className="filter
+          invert dark:filter-none
+          "
+          />
+        </div> */}
+      </motion.div>
+      <motion.div
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-gradient-to-r dark:bg-zinc-800 bg-zinc-300"
+        variants={transitionVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{
+          delay: 0.6,
+          ease: "easeInOut",
+          duration: 1.8,
+        }}
+      >
+        {/* <div className="flex justify-center items-center h-screen">
+          <Image
+            src="/logo.png"
+            width={200}
+            height={200}
+            alt="logo"
+            className="filter
+          invert dark:filter-none
+          "
+          />
+        </div> */}
+      </motion.div>
     </>
   );
 };
