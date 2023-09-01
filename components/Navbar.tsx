@@ -45,6 +45,20 @@ const socials = [
   },
 ];
 
+// change navbar color on scroll
+
+const changeNavbarColor = () => {
+  if (window.scrollY >= 80) {
+    document.querySelector(".stickit")?.classList.add("bg-zinc-950");
+  } else {
+    document.querySelector(".stickit")?.classList.remove("bg-zinc-950");
+  }
+};
+
+if (typeof window !== "undefined") {
+  window.addEventListener("scroll", changeNavbarColor);
+}
+
 export default function Navbar() {
   return (
     <div className="stickit">
