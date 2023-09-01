@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const About = (props: Props) => {
+const About = async () => {
   return <div>About</div>;
 };
 

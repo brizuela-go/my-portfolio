@@ -1,9 +1,14 @@
-import React from "react";
+import ProjectCards from "@/components/ProjectCards";
+import { getProjects } from "@/sanity/sanity-utils";
 
-type Props = {};
+const Projects = async () => {
+  const projects = await getProjects();
 
-const Projects = (props: Props) => {
-  return <div>Projects</div>;
+  return (
+    <main className="max-w-5xl mx-auto flex max-lg:justify-center justify-start items-center my-28 max-sm:mt-40 mt-40  ">
+      <ProjectCards projects={projects} />
+    </main>
+  );
 };
 
 export default Projects;
