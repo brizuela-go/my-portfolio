@@ -89,7 +89,7 @@ export default function Sidebar() {
         </div>
       </div>
       <div className="fixed bottom-0 w-full lg:hidden  ">
-        <Menubar className="p-8 flex justify-between items-center ">
+        <Menubar className="py-8 px-4 flex justify-between items-center ">
           {menuItems.map((item) => (
             <Link href={item.href} key={item.href}>
               <MenubarMenu>

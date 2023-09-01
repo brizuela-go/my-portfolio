@@ -5,7 +5,7 @@ export default async function Home() {
   // const projects = await getProjects();
 
   return (
-    <main className="max-w-5xl mx-auto mt-44 max-lg:mt-52">
+    <main className="max-w-5xl mx-auto flex max-lg:justify-center justify-start items-center h-screen -mt-28 ">
       <Hero />
       <h1></h1>
     </main>
