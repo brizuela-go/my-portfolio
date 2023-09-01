@@ -2,18 +2,12 @@
 
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import ParticlesComponent from "@/components/Particles";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Juan Brizuela",
-  description: "Personal portfolio of Juan Brizuela",
-};
 
 import { usePathname, useRouter } from "next/navigation";
 
@@ -25,10 +19,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const router = useRouter();
   const pathName = usePathname();
   return (
     <html lang="en">
+      <head>
+        <title>Juan Brizuela</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* description */}
+        <meta
+          name="description"
+          content="Personal portfolio of Juan Brizuela"
+        />
+      </head>
       <AnimatePresence mode="wait">
         <body className={`${inter.className}`}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
