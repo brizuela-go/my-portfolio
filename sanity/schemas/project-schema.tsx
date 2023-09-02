@@ -28,6 +28,11 @@ const project = {
       ],
     },
     {
+      name: "description",
+      title: "Description",
+      type: "string",
+    },
+    {
       name: "url",
       title: "URL",
       type: "url",
@@ -42,7 +47,18 @@ const project = {
       name: "technologies",
       title: "Technologies",
       type: "array",
-      of: [{ type: "string" }],
+      of: [
+        {
+          type: "object",
+          name: "technology",
+          title: "Technology",
+          fields: [
+            { type: "string", name: "name", title: "Name" },
+            { type: "url", name: "url", title: "URL" },
+            { type: "image", name: "image", title: "Image" },
+          ],
+        },
+      ],
     },
   ],
 };

@@ -23,7 +23,9 @@ const ProjectCards = ({ projects }: Props) => {
           <Card className="hover:shadow-lg hover:-translate-y-1 transition duration-200 ease-in-out dark:shadow-zinc-900 w-[300px] h-[210px]  ">
             <CardHeader>
               <CardTitle className="">{project.name}</CardTitle>
-              <CardDescription className="">{project.slug}</CardDescription>
+              <CardDescription className="">
+                {project.description}
+              </CardDescription>
             </CardHeader>
             <CardContent>
               {project.technologies.map((tag, i) => (
@@ -32,7 +34,7 @@ const ProjectCards = ({ projects }: Props) => {
                   variant={"secondary"}
                   className="text-center mr-2"
                 >
-                  {tag}
+                  {tag.name}
                 </Badge>
               ))}
             </CardContent>
