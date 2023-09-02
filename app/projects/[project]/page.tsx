@@ -33,7 +33,7 @@ export default async function Project({ params }: Props) {
         <h3 className="text-5xl tracking-tight font-medium ">Technologies</h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-12">
           {project.technologies.map((technology) => (
-            <Link href={technology.url}>
+            <Link key={technology.name} href={technology.url}>
               <Card className="hover:shadow-lg hover:-translate-y-1 transition duration-200 ease-in-out dark:shadow-zinc-900   ">
                 <CardHeader className="flex justify-center items-center flex-col">
                   <Image
