@@ -49,9 +49,11 @@ const socials = [
 
 const changeNavbarColor = () => {
   if (window.scrollY >= 80) {
-    document.querySelector(".stickit")?.classList.add("bg-zinc-950");
+    document.querySelector(".stickit")?.classList.add("dark:bg-zinc-950");
+    document.querySelector(".stickit")?.classList.add("bg-white");
   } else {
-    document.querySelector(".stickit")?.classList.remove("bg-zinc-950");
+    document.querySelector(".stickit")?.classList.remove("dark:bg-zinc-950");
+    document.querySelector(".stickit")?.classList.remove("bg-white");
   }
 };
 

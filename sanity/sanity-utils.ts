@@ -15,6 +15,7 @@ export async function getProjects(): Promise<Project[]> {
         url,
         content,
         technologies,
+        description,
     }`
   );
 }
@@ -31,7 +32,12 @@ export async function getProject(slug: string): Promise<Project> {
         "image": image.asset->url,
         url,
         content,
-        technologies,
+        technologies[]{
+          name,
+          url,
+          "image": image.asset->url  
+        },
+        description,
     }`,
     { slug }
   );

@@ -20,7 +20,7 @@ const ProjectCards = ({ projects }: Props) => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:space-x-2 ">
       {projects.map((project) => (
         <Link href={`/projects/${project.slug}`} key={project.name}>
-          <Card className="hover:shadow-lg hover:-translate-y-1 transition duration-200 ease-in-out dark:shadow-zinc-900 w-[300px] h-[210px]  ">
+          <Card className="hover:shadow-lg hover:-translate-y-1 transition duration-200 ease-in-out dark:shadow-zinc-900 w-[300px] h-[230px]  ">
             <CardHeader>
               <CardTitle className="">{project.name}</CardTitle>
               <CardDescription className="">
