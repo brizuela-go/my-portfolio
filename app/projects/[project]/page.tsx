@@ -29,8 +29,12 @@ export default async function Project({ params }: Props) {
         </h1>
         <p className="text-2xl text-center mt-4 text-muted-foreground text">{`${project.description}`}</p>
       </div>
-      <div className="max-w-5xl h-screen mx-auto">
-        <h3 className="text-5xl tracking-tight font-medium ">Technologies</h3>
+      <div className="max-w-5xl h-screen mx-auto "></div>
+
+      <div className="max-w-5xl h-screen mx-auto ">
+        <h3 className="text-5xl tracking-tight font-medium max-sm:text-center ">
+          Technologies
+        </h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-12">
           {project.technologies.map((technology) => (
             <Link key={technology.name} href={technology.url}>
