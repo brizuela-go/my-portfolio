@@ -3,6 +3,9 @@ import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 import { Skill } from "@/interfaces/Skill";
 import { Experience } from "@/interfaces/Experience";
+import { Stat } from "@/interfaces/Stat";
+import { Award } from "@/interfaces/Award";
+import { Credential } from "@/interfaces/Credential";
 
 export async function getProjects(): Promise<Project[]> {
   const client = createClient(clientConfig);
@@ -71,6 +74,47 @@ export async function getExperiences(): Promise<Experience[]> {
         position,
         company,
         description,
+    }`
+  );
+}
+
+export async function getStats(): Promise<Stat[]> {
+  const client = createClient(clientConfig);
+
+  return client.fetch(
+    groq`*[_type == "stat"]{
+        _id,
+        _createdAt,
+        name,
+        value,
+    }`
+  );
+}
+
+export async function getAwards(): Promise<Award[]> {
+  const client = createClient(clientConfig);
+
+  return client.fetch(
+    groq`*[_type == "award"]{
+        _id,
+        _createdAt,
+        award,
+        place,
+        year,
+    }`
+  );
+}
+
+export async function getCredentials(): Promise<Credential[]> {
+  const client = createClient(clientConfig);
+
+  return client.fetch(
+    groq`*[_type == "credential"]{
+        _id,
+        _createdAt,
+        credential,
+        issuer,
+        issueDate,
     }`
   );
 }

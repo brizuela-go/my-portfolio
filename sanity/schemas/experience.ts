@@ -4,16 +4,6 @@ const experience = {
   type: "document",
   fields: [
     {
-      name: "title",
-      title: "Title",
-      type: "string",
-    },
-    {
-      name: "years",
-      title: "Years",
-      type: "string",
-    },
-    {
       name: "position",
       title: "Position",
       type: "string",
@@ -24,8 +14,8 @@ const experience = {
       type: "string",
     },
     {
-      name: "description",
-      title: "Description",
+      name: "years",
+      title: "Years",
       type: "string",
     },
   ],

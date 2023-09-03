@@ -30,7 +30,7 @@ const socials = [
   },
   {
     name: "LinkedIn",
-    url: "https://mx.linkedin.com/in/juan-brizuela-549481192?trk=public_profile_browsemap_profile-result-card_result-card_full-click",
+    url: "https://www.linkedin.com/in/juan-eduardo-brizuela-gonz%C3%A1lez-549481192",
     icon: Linkedin,
   },
   {
