@@ -10,9 +10,9 @@ import ParticlesComponent from "@/components/Particles";
 const inter = Inter({ subsets: ["latin"] });
 
 import { usePathname, useRouter } from "next/navigation";
-
 import { AnimatePresence, motion } from "framer-motion";
 import Transition from "@/components/Transition";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
   children,
@@ -202,6 +202,7 @@ export default function RootLayout({
               <Sidebar />
               <ParticlesComponent />
               {children}
+              <Analytics />
             </motion.div>
           </ThemeProvider>
         </body>
