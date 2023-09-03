@@ -14,7 +14,7 @@ const Experiences = async () => {
     <div className="space-y-8 mb-14">
       {experiences.map((experience, index) => (
         <div
-          className="grid lg:grid-cols-1 grid-cols-1 md:grid-cols-3 text-sm "
+          className="grid lg:grid-cols-1 grid-cols-1 md:grid-cols-3 text-sm p-2 "
           key={index}
         >
           <div className="space-y-1">

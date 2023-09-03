@@ -5,7 +5,6 @@ import { schemaTypes } from "./sanity/schemas";
 const config = defineConfig({
   name: "default",
   title: "my-portfolio",
-
   projectId: "hykkz4sk",
   dataset: "production",
 

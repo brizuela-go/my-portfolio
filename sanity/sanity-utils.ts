@@ -115,6 +115,7 @@ export async function getCredentials(): Promise<Credential[]> {
         credential,
         issuer,
         issueDate,
+        url,
     }`
   );
 }

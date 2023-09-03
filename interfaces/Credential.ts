@@ -4,4 +4,5 @@ export interface Credential {
   credential: string;
   issuer: string;
   issueDate: number;
+  url: string;
 }
