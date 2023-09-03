@@ -101,6 +101,7 @@ export async function getAwards(): Promise<Award[]> {
         award,
         place,
         year,
+        url,
     }`
   );
 }

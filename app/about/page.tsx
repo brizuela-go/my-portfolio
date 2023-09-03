@@ -1,3 +1,4 @@
+import Awards from "@/components/Awards";
 import Credentials from "@/components/Credentials";
 import Experiences from "@/components/Experiences";
 import Skills from "@/components/Skills";
@@ -38,7 +39,9 @@ const About = async () => {
             <TabsContent value="credentials">
               <Credentials />
             </TabsContent>
-            <TabsContent value="awards">Change your password here.</TabsContent>
+            <TabsContent value="awards">
+              <Awards />
+            </TabsContent>
           </Tabs>
         </div>
       </div>

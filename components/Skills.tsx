@@ -14,15 +14,10 @@ export default async function Skills() {
   );
 
   return (
-    <div
-      // center
-      className="grid grid-cols-1  gap-4 max-md:grid-cols-1 max-xl:grid-cols-3 max-xl:gap-8
-
-      "
-    >
+    <div className="grid grid-cols-1  gap-4 max-md:grid-cols-1 max-xl:grid-cols-3 max-xl:gap-8 p-2 ">
       {skillCategories.map((category) => (
-        <div className="grid grid-cols-3" key={category}>
-          <p className=" text-start capitalize font-medium text-muted-foreground">
+        <div className="grid grid-cols-3 " key={category}>
+          <p className=" text-start capitalize text-sm dark:text-zinc-200 text-zinc-800">
             {category}
           </p>
           <div className="flex space-x-4 col-span-2 ">

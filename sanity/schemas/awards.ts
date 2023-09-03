@@ -18,6 +18,11 @@ const award = {
       title: "Year",
       type: "number",
     },
+    {
+      name: "url",
+      title: "URL",
+      type: "url",
+    },
   ],
 };
 

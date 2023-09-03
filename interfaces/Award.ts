@@ -4,4 +4,5 @@ export interface Award {
   award: string;
   place: string;
   year: number;
+  url: string;
 }
