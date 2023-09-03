@@ -7,6 +7,10 @@ import TypeWriterProvider from "@/components/TypeWriterProvider";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getStats } from "@/sanity/sanity-utils";
 
+export const dynamic = "auto",
+  runtime = "edge",
+  fetchCache = "auto";
+
 const About = async () => {
   const stats = await getStats();
   return (
