@@ -22,10 +22,11 @@ const skills = {
       type: "string",
       options: {
         list: [
-          { value: "frontend", title: "Frontend" },
           { value: "backend", title: "Backend" },
-          { value: "mobile", title: "Mobile" },
+          { value: "database", title: "Database" },
           { value: "design", title: "Design" },
+          { value: "frontend", title: "Frontend" },
+          { value: "mobile", title: "Mobile" },
           { value: "other", title: "Other" },
         ],
       },

@@ -1,5 +1,6 @@
 import ProjectCards from "@/components/ProjectCards";
 import { getProjects } from "@/sanity/sanity-utils";
+import { Metadata } from "next";
 
 const Projects = async () => {
   const projects = await getProjects();
