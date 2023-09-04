@@ -200,7 +200,7 @@ export default function RootLayout({
             <Navbar />
           </header>
           <Sidebar />
-          <ParticlesComponent />
+          {/* <ParticlesComponent /> */}
           {children}
           <Analytics />
           {/* </motion.div> */}
