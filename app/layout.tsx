@@ -191,21 +191,22 @@ export default function RootLayout({
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
         />
       </head>
-      <AnimatePresence mode="wait">
-        <body className={`${inter.className}`}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <motion.div key={pathName} className="h-full">
-              <Transition />
-              <header>
-                <Navbar />
-              </header>
-              <Sidebar />
-              {children}
-              <Analytics />
-            </motion.div>
-          </ThemeProvider>
-        </body>
-      </AnimatePresence>
+      {/* <AnimatePresence mode="wait"> */}
+      <body className={`${inter.className}`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* <motion.div key={pathName} className="h-full"> */}
+          {/* <Transition /> */}
+          <header>
+            <Navbar />
+          </header>
+          <Sidebar />
+          <ParticlesComponent />
+          {children}
+          <Analytics />
+          {/* </motion.div> */}
+        </ThemeProvider>
+      </body>
+      {/* </AnimatePresence> */}
     </html>
   );
 }
