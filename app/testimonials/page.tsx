@@ -12,6 +12,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import Image from "next/image";
 import { Quote } from "lucide-react";
 
@@ -60,13 +62,9 @@ const Testimonials = () => {
               <Card>
                 <CardHeader className="text-center flex justify-center flex-col items-center">
                   <div className="mb-6">
-                    <Image
-                      className="rounded-full h-36 w-36 max-sm:h-24 max-sm:w-24 "
-                      alt={testimonial.name}
-                      width={1000}
-                      height={1000}
-                      src={testimonial.image}
-                    />
+                    <Avatar className=" w-32 h-32">
+                      <AvatarImage src={testimonial.image} />
+                    </Avatar>
                   </div>
 
                   <CardTitle>{testimonial.name}</CardTitle>
