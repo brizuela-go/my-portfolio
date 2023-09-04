@@ -13,10 +13,7 @@ const Experiences = async () => {
   return (
     <div className="space-y-8 mb-14">
       {experiences.map((experience, index) => (
-        <div
-          className="grid lg:grid-cols-1 grid-cols-1 md:grid-cols-3 text-sm p-2 "
-          key={index}
-        >
+        <div className="grid grid-cols-1 text-sm p-2 " key={index}>
           <div className="space-y-1">
             <h4 className="font-medium text-start text-zinc-800 dark:text-zinc-200 ">
               {experience.position}

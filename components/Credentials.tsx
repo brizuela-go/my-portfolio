@@ -14,7 +14,7 @@ const Credentials = async () => {
           target="_blank"
           rel="noopener noreferrer"
           href={credential?.url || "#"}
-          className="grid lg:grid-cols-1 grid-cols-1 md:grid-cols-3 text-sm hover:shadow-md hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:rounded-md transition duration-300 ease-in-out transform p-2 "
+          className="grid grid-cols-1 text-sm hover:shadow-md hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:rounded-md transition duration-300 ease-in-out transform p-2 "
           key={index}
         >
           <div className="space-y-1">
