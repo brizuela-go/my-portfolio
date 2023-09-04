@@ -194,13 +194,13 @@ export default function RootLayout({
       {/* <AnimatePresence mode="wait"> */}
       <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {/* <motion.div key={pathName} className="h-full"> */}
+          {/* <motion.div key={pathName} className="h-screen"> */}
           {/* <Transition /> */}
           <header>
             <Navbar />
           </header>
           <Sidebar />
-          {/* <ParticlesComponent /> */}
+          <ParticlesComponent />
           {children}
           <Analytics />
           {/* </motion.div> */}
