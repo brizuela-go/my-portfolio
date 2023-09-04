@@ -34,7 +34,7 @@ const Transition = () => {
         }}
       >
         <div className="flex justify-center items-center h-screen">
-          <Image
+          <img
             src="/logo.png"
             width={200}
             height={200}
