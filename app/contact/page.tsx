@@ -1,9 +1,17 @@
+import ContactForm from "@/components/ContactForm";
 import React from "react";
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  return <div>Contact</div>;
+  return (
+    <main className="flex justify-center items-center h-screen flex-col space-y-10">
+      <h1 className="text-7xl font-semibold text-muted-foreground text-center max-lg:text-4xl ">
+        Contact <span className="text-foreground"> me</span>
+      </h1>
+      <ContactForm />
+    </main>
+  );
 };
 
 export default Contact;
