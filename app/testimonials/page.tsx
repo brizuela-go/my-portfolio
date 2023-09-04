@@ -55,10 +55,11 @@ const Testimonials = () => {
           autoPlay={true}
           infiniteLoop={true}
           showStatus={false}
-          className="px-10"
+          showArrows={false}
+          className="px-10 max-sm:-z-20 "
         >
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="mb-10">
+            <div key={index} className="mb-10 ">
               <Card>
                 <CardHeader className="text-center flex justify-center flex-col items-center">
                   <div className="mb-6">
