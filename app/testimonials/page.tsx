@@ -76,7 +76,7 @@ const Testimonials = () => {
                   <Quote className="rotate-180" size={28} />
                 </div>
 
-                <CardContent className="italic text-muted-foreground">
+                <CardContent className="italic text-muted-foreground text-sm">
                   {testimonial.description}
                 </CardContent>
               </Card>
