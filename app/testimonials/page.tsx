@@ -61,7 +61,7 @@ const Testimonials = () => {
                 <CardHeader className="text-center flex justify-center flex-col items-center">
                   <div className="mb-6">
                     <Image
-                      className="rounded-full h-36 w-36 "
+                      className="rounded-full h-36 w-36 max-sm:h-24 max-sm:w-24 "
                       alt={testimonial.name}
                       width={1000}
                       height={1000}
