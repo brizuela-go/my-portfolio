@@ -56,7 +56,7 @@ const Testimonials = () => {
           className="px-10"
         >
           {testimonials.map((testimonial, index) => (
-            <div className="mb-10">
+            <div key={index} className="mb-10">
               <Card>
                 <CardHeader className="text-center flex justify-center flex-col items-center">
                   <div className="mb-6">

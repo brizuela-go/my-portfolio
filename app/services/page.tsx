@@ -63,8 +63,8 @@ const Services = () => {
             My Services
           </h1>
           <p className="text-muted-foreground max-lg:text-center">
-            List of services I provide. I'm fully committed to provide the best
-            quality to my clients
+            List of services I provide. I&apos;m fully committed to provide the
+            best quality to my clients
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Services = () => {
           className="px-10"
         >
           {services.map((service, index) => (
-            <div className="mb-10">
+            <div key={index} className="mb-10">
               <Card>
                 <CardHeader className="text-center flex justify-center flex-col items-center">
                   <service.icon size={64} />
