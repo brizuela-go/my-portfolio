@@ -10,8 +10,6 @@ import ParticlesComponent from "@/components/Particles";
 const inter = Inter({ subsets: ["latin"] });
 
 import { usePathname, useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
-import Transition from "@/components/Transition";
 import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({
@@ -34,7 +32,10 @@ export default function RootLayout({
           name="description"
           content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
         />
-        <meta name="image" content="https://www.juanbrizuela.com.mx/logo.png" />
+        <meta
+          name="image"
+          content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
+        />
 
         <meta itemProp="name" content="Juan Brizuela" />
         <meta
@@ -43,7 +44,7 @@ export default function RootLayout({
         />
         <meta
           itemProp="image"
-          content="https://www.juanbrizuela.com.mx/logo.png"
+          content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
         />
 
         <meta property="og:title" content="Juan Brizuela" />
