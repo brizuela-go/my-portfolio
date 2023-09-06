@@ -1,5 +1,5 @@
 import ContactForm from "@/components/ContactForm";
-import WaterDropGrid from "@/components/WaterDrop";
+
 import React from "react";
 
 type Props = {};
@@ -11,7 +11,6 @@ const Contact = (props: Props) => {
         Contact <span className="text-foreground"> me</span>
       </h1>
       <ContactForm />
-      <WaterDropGrid />
     </main>
   );
 };
