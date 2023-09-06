@@ -9,7 +9,8 @@ import { getStats } from "@/sanity/sanity-utils";
 
 export const dynamic = "auto",
   runtime = "edge",
-  fetchCache = "auto";
+  fetchCache = "auto",
+  revalidate = 10;
 
 const About = async () => {
   const stats = await getStats();

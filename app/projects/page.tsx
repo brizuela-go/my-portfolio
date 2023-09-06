@@ -3,7 +3,8 @@ import { getProjects } from "@/sanity/sanity-utils";
 
 export const dynamic = "auto",
   runtime = "edge",
-  fetchCache = "auto";
+  fetchCache = "auto",
+  revalidate = 10;
 
 const Projects = async () => {
   const projects = await getProjects();

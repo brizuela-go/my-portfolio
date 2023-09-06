@@ -22,7 +22,8 @@ type Props = {
 
 export const dynamic = "auto",
   runtime = "edge",
-  fetchCache = "auto";
+  fetchCache = "auto",
+  revalidate = 10;
 
 export default async function Project({ params }: Props) {
   const slug = params.project;
