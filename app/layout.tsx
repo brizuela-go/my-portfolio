@@ -28,11 +28,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         {/* description */}
 
-        <meta
-          name="description"
-          content="Personal portfolio of Juan Brizuela"
-        />
-
         <title>Juan Brizuela</title>
 
         <meta
