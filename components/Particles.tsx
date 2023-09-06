@@ -17,7 +17,10 @@ const ParticlesComponent = () => {
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      await console.log("Juan Brizuela");
+      await console.log(
+        "%c Juan Brizuela",
+        "font-weight: bold; font-size: 50px;color: white; text-shadow: 3px 3px 0 #212124, 6px 6px 0 #a1a1aa, 9px 9px 0 rgb(0,0,0)"
+      );
     },
     []
   );
