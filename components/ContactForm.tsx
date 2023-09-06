@@ -61,7 +61,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div>
+    <div className="z-10">
       <Toaster />
       <form onSubmit={handleSubmit} className="space-y-10">
         <div className="flex max-sm:flex-col justify-center gap-4">

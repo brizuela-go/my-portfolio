@@ -19,7 +19,7 @@ const Stats = ({ stats }: Props) => {
               {stat.name}
             </p>
             <div className="font-bold text-foreground ">
-              <CountUp delay={1.2} end={stat.value} duration={10} />
+              <CountUp end={stat.value} duration={10} />
               {" +"}
             </div>
           </div>

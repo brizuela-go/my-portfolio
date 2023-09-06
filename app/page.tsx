@@ -2,7 +2,6 @@
 
 import Hero from "@/components/Hero";
 import Transition from "@/components/Transition";
-import { getProjects } from "@/sanity/sanity-utils";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Home() {
