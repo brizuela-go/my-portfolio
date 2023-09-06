@@ -56,19 +56,7 @@ const Transition = () => {
           ease: "easeInOut",
           duration: 0.8,
         }}
-      >
-        {/* <div className="flex justify-center items-center h-screen">
-          <Image
-            src="/logo.png"
-            width={200}
-            height={200}
-            alt="logo"
-            className="filter
-          invert dark:filter-none
-          "
-          />
-        </div> */}
-      </motion.div>
+      ></motion.div>
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-gradient-to-r dark:bg-zinc-800 bg-zinc-300"
         variants={transitionVariants}
@@ -80,19 +68,7 @@ const Transition = () => {
           ease: "easeInOut",
           duration: 0.8,
         }}
-      >
-        {/* <div className="flex justify-center items-center h-screen">
-          <Image
-            src="/logo.png"
-            width={200}
-            height={200}
-            alt="logo"
-            className="filter
-          invert dark:filter-none
-          "
-          />
-        </div> */}
-      </motion.div>
+      ></motion.div>
     </>
   );
 };
