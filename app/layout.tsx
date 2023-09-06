@@ -33,6 +33,49 @@ export default function RootLayout({
           content="Personal portfolio of Juan Brizuela"
         />
 
+        <title>Juan Brizuela</title>
+
+        <meta
+          name="description"
+          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+        />
+        <meta name="image" content="https://www.juanbrizuela.com.mx/logo.png" />
+
+        <meta itemProp="name" content="Juan Brizuela" />
+        <meta
+          itemProp="description"
+          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+        />
+        <meta
+          itemProp="image"
+          content="https://www.juanbrizuela.com.mx/logo.png"
+        />
+
+        <meta property="og:title" content="Juan Brizuela" />
+        <meta
+          property="og:description"
+          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+        />
+        <meta
+          property="og:image"
+          content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
+        />
+        <meta property="og:url" content="https://www.juanbrizuela.com.mx/" />
+        <meta property="og:site_name" content="Juan Brizuela" />
+        <meta property="og:locale" content="en_MX" />
+        <meta property="og:type" content="website" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content="Juan Brizuela" />
+        <meta
+          property="twitter:description"
+          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+        />
+        <meta
+          property="twitter:image:src"
+          content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
+        />
+
         {/* link manifest json */}
         <link rel="manifest" href="/manifest.json" />
 
