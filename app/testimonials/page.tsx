@@ -37,7 +37,8 @@ const testimonials = [
     name: "Antonio Benítez Ruíz",
     title:
       "Coordinator of the Master's Degree in Innovation and Technological Development at Universidad Iberoamericana Puebla",
-    description: "Very capable student. One of my favourites.",
+    description:
+      "Eduardo is a person with very good skills as a developer. He is competent and responsible, you can trust his self-learning ability to undertake any type of project.",
     image: "/3.png",
   },
 ];
