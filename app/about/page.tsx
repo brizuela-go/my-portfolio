@@ -4,14 +4,17 @@ import Experiences from "@/components/Experiences";
 import Skills from "@/components/Skills";
 import Stats from "@/components/Stats";
 import TypeWriterProvider from "@/components/TypeWriterProvider";
+import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getStats } from "@/sanity/sanity-utils";
+import { FileIcon } from "lucide-react";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const dynamic = "auto",
   runtime = "edge",
   fetchCache = "auto",
-  revalidate = 10;
+  revalidate = 0;
 
 const About = async () => {
   const stats = await getStats();
@@ -51,6 +54,18 @@ const About = async () => {
           </Tabs>
         </div>
       </div>
+
+      <Link
+        className="fixed bottom-5 right-7 max-lg:bottom-20"
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/resume.pdf"
+      >
+        <Button>
+          <FileIcon className="w-6 h-6 mr-2" />
+          Download CV
+        </Button>
+      </Link>
     </main>
   );
 };
