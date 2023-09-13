@@ -92,7 +92,10 @@ export default async function Project({ params }: Props) {
   );
 }
 
-export const metadata: Metadata = {
-  title: "Projects",
-  description: "Projects I've worked on",
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = await getProject(params.project);
+  return {
+    title: project.name,
+    description: project.description,
+  };
+}
