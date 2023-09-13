@@ -6,6 +6,7 @@ import Stats from "@/components/Stats";
 import TypeWriterProvider from "@/components/TypeWriterProvider";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getStats } from "@/sanity/sanity-utils";
+import { Metadata } from "next";
 
 export const dynamic = "auto",
   runtime = "edge",
@@ -55,3 +56,8 @@ const About = async () => {
 };
 
 export default About;
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "About me",
+};

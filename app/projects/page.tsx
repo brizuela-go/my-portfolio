@@ -1,5 +1,6 @@
 import ProjectCards from "@/components/ProjectCards";
 import { getProjects } from "@/sanity/sanity-utils";
+import { Metadata } from "next";
 
 export const dynamic = "auto",
   runtime = "edge",
@@ -17,3 +18,8 @@ const Projects = async () => {
 };
 
 export default Projects;
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Projects I've worked on",
+};

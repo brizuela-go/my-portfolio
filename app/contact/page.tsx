@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
 
 import React from "react";
 
@@ -16,3 +17,8 @@ const Contact = (props: Props) => {
 };
 
 export default Contact;
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact me",
+};

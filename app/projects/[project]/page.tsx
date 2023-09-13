@@ -13,6 +13,7 @@ import { PortableText } from "@portabletext/react";
 import ReactMarkdown from "react-markdown";
 import { Calendar, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 
 type Props = {
   params: {
@@ -90,3 +91,8 @@ export default async function Project({ params }: Props) {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Projects I've worked on",
+};
