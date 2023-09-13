@@ -17,51 +17,49 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Juan Brizuela</title>
+        <title>Juan Eduardo Brizuela</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* description */}
 
-        <title>Juan Brizuela</title>
-
         <meta
           name="description"
-          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+          content="Full Stack Developer | Personal Portfolio of Juan Eduardo Brizuela"
         />
         <meta
           name="image"
           content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
         />
 
-        <meta itemProp="name" content="Juan Brizuela" />
+        <meta itemProp="name" content="Juan Eduardo Brizuela" />
         <meta
           itemProp="description"
-          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+          content="Full Stack Developer | Personal Portfolio of Juan Eduardo Brizuela"
         />
         <meta
           itemProp="image"
           content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
         />
 
-        <meta property="og:title" content="Juan Brizuela" />
+        <meta property="og:title" content="Juan Eduardo Brizuela" />
         <meta
           property="og:description"
-          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+          content="Full Stack Developer | Personal Portfolio of Juan Eduardo Brizuela"
         />
         <meta
           property="og:image"
           content="https://previews.dropbox.com/p/thumb/ACDYTqexJd1N8_cellMCWDhoBQUH6YoRSn_h8AfOnuoBjrAYnLj4bVXhP-pSbAnZEF8hkk9KAlR_FK-aI3NFphKgxTJRjterbgOcDwE9NB2SdaEK5ZlqpAHyvx0dxZShLrzRwq0dYISlxI54wZ2PuDRPJwvmwpKATbQZZUggzJVwq1Tx76qrLT0PDIHzHDaONtX5oN_5npzi22L9iPCxfJdk63Oy8uYFXbbva8OE3_DjDHUTcnIevCb2TA3ZS35LBtD2xibFpRTsuas0j2qrsw0P2XbwDMmo3sWkgQt0kB2l6-zfZjEjRfoIZbLs3LJnh4iKSMFaiXfOtLIt300Y-hyO/p.png"
         />
         <meta property="og:url" content="https://www.juanbrizuela.com.mx/" />
-        <meta property="og:site_name" content="Juan Brizuela" />
+        <meta property="og:site_name" content="Juan Eduardo Brizuela" />
         <meta property="og:locale" content="en_MX" />
         <meta property="og:type" content="website" />
 
         <meta property="twitter:card" content="summary" />
-        <meta property="twitter:title" content="Juan Brizuela" />
+        <meta property="twitter:title" content="Juan Eduardo Brizuela" />
         <meta
           property="twitter:description"
-          content="Full Stack Developer | Personal Portfolio of Juan Brizuela"
+          content="Full Stack Developer | Personal Portfolio of Juan Eduardo Brizuela"
         />
         <meta
           property="twitter:image:src"

@@ -10,7 +10,6 @@ import { getProject } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
 import { PortableText } from "@portabletext/react";
-import ReactMarkdown from "react-markdown";
 import { Calendar, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
