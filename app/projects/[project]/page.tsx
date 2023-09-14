@@ -13,6 +13,7 @@ import { PortableText } from "@portabletext/react";
 import { Calendar, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: {
@@ -22,7 +23,6 @@ type Props = {
 
 export const dynamic = "auto",
   runtime = "edge",
-  fetchCache = "auto",
   revalidate = 10;
 
 export default async function Project({ params }: Props) {
@@ -93,8 +93,13 @@ export default async function Project({ params }: Props) {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = await getProject(params.project);
+
+  if (!project) {
+    return notFound();
+  }
+
   return {
-    title: project.name,
-    description: project.description,
+    title: project?.name,
+    description: project?.description,
   };
 }
