@@ -14,6 +14,7 @@ import {
   MonitorSmartphone,
   TabletSmartphone,
 } from "lucide-react";
+import { RiWhatsappLine } from "react-icons/ri";
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -44,6 +45,11 @@ const services = [
     title: "IoT Development",
     description: "Web and mobile apps for IoT devices and hardware coding",
     icon: Lightbulb,
+  },
+  {
+    title: "WhatsApp Bots",
+    description: "WhatsApp bots for business and personal use",
+    icon: RiWhatsappLine,
   },
   {
     title: "Design",
