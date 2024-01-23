@@ -2,7 +2,13 @@
 
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
-import { GithubIcon, InstagramIcon, Linkedin, MenuIcon } from "lucide-react";
+import {
+  GithubIcon,
+  InstagramIcon,
+  Linkedin,
+  MenuIcon,
+  YoutubeIcon,
+} from "lucide-react";
 import { RiMessengerLine, RiWhatsappLine } from "react-icons/ri";
 
 import {
@@ -42,6 +48,11 @@ const socials = [
     name: "Whatsapp",
     url: "https://wa.me/522213321516",
     icon: RiWhatsappLine,
+  },
+  {
+    name: "Youtube",
+    url: "https://www.youtube.com/@CodingwithJuanB",
+    icon: YoutubeIcon,
   },
 ];
 
